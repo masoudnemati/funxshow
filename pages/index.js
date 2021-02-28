@@ -130,6 +130,7 @@ export default function Home() {
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
+          text-align: center;
         }
         .left {
           padding: 50px;
@@ -323,17 +324,6 @@ export default function Home() {
           animation: gradient 6s ease infinite alternate forwards;
         }
 
-        /* responsive social media */
-
-        @media only screen and (max-width: 1275px) {
-          ul {
-            width: 90vw;
-            height: 250px;
-            padding: 50px;
-            margin-top: -200px;
-          }
-        }
-
         @keyframes gradient {
           0% {
             background-position: 0% 50%;
@@ -343,6 +333,22 @@ export default function Home() {
           }
           100% {
             background-position: 0% 50%;
+          }
+        }
+
+        /* responsive social media by myself */
+
+        @media only screen and (max-width: 1275px) {
+          ul {
+            width: 90vw;
+            height: 150px;
+            padding: 17px;
+            margin-top: -170px;
+          }
+        }
+        @media only screen and (max-width: 600px) {
+          main {
+            margin-left: 21vw;
           }
         }
       `}</style>
