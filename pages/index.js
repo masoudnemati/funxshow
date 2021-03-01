@@ -35,9 +35,8 @@ export default function Home() {
                 <span></span>
                 <span></span>
                 <span></span>
-                <span className="fab fa-instagram">
+                <span className="instagram">
                   <svg
-                    className="fab fa-instagram"
                     fill="#ffffff"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 30 30"
@@ -59,7 +58,7 @@ export default function Home() {
                 <span></span>
                 <span></span>
                 <span></span>
-                <span className="fab fa-facebook-f">
+                <span className="discord">
                   <svg
                     fill="#ffffff"
                     xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +81,7 @@ export default function Home() {
                 <span></span>
                 <span></span>
                 <span></span>
-                <span className="fab fa-twitter">
+                <span className="twitter">
                   <svg
                     fill="#ffffff"
                     xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +104,7 @@ export default function Home() {
                 <span></span>
                 <span></span>
                 <span></span>
-                <span className="fab fa-twitch">
+                <span className="youtube">
                   <svg
                     fill="#ffffff"
                     xmlns="http://www.w3.org/2000/svg"
@@ -261,11 +260,11 @@ export default function Home() {
           width: 100%;
           height: 100%;
           font-size: 3em;
-          transition: 0.4s;
+          transition: all 0.4s linear;
         }
         li:hover a span {
           z-index: 1000;
-          transition: 0.5s;
+          transition: 0.8s;
           color: rgba(255, 255, 255, 1);
           box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
         }
@@ -303,11 +302,11 @@ export default function Home() {
           background-color: #d6249f;
           background-image: linear-gradient(270deg, #fd5949, #d6249f, #285aeb);
           background-size: 800% 800%;
-          animation: gradient 6s ease infinite;
+          animation: gradient 10s ease infinite;
         }
         li:nth-of-type(2):hover span {
-          background-color: #3b5998;
-          background-image: linear-gradient(270deg, #3b5998, #0077f2);
+          background-color: #9b84ee;
+          background-image: linear-gradient(270deg, #202225, #3b5998);
           background-size: 400% 400%;
           animation: gradient 6s ease infinite;
         }
@@ -343,13 +342,26 @@ export default function Home() {
             width: 90vw;
             height: 150px;
             padding: 17px;
-            margin-top: -170px;
+            margin-top: -165px;
           }
         }
         @media only screen and (max-width: 600px) {
           main {
             margin-left: 21vw;
           }
+        }
+
+        /* fixing z-index myself */
+        .instagram {
+          z-index: 5000;
+        }
+
+        .discord {
+          z-index: 4000;
+        }
+
+        .twitter {
+          z-index: 3000;
         }
       `}</style>
     </>
