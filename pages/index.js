@@ -222,7 +222,7 @@ export default function Home() {
           background-color: #292929;
           margin-right: 15px;
           width: 25%;
-          transition: 0.4s;
+          /* transition: 0.4s; */
         }
         ul li:last-of-type {
           margin-right: 0;
@@ -260,11 +260,11 @@ export default function Home() {
           width: 100%;
           height: 100%;
           font-size: 3em;
-          transition: all 0.4s linear;
+          transition: all 1s linear;
         }
         li:hover a span {
           z-index: 1000;
-          transition: 0.8s;
+          transition: 0.5s;
           color: rgba(255, 255, 255, 1);
           box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
         }
@@ -346,8 +346,15 @@ export default function Home() {
           }
         }
         @media only screen and (max-width: 600px) {
+          ul {
+            width: 95vw;
+            transform-style: preserve-3d;
+            transform: rotate(0deg) skew(2deg);
+            margin-top: -190px;
+          }
+
           main {
-            margin-left: 21vw;
+            margin-left: 12vw;
           }
         }
 
