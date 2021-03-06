@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="fa">
+      <Html lang="en">
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
