@@ -106,6 +106,13 @@ const Stream = () => {
         .twitch:hover {
           box-shadow: inset 0 0 15px #71299f;
         }
+
+        @media only screen and (max-width: 700px) {
+          section {
+            background: none;
+            padding-bottom: 0;
+          }
+        }
       `}</style>
     </>
   );

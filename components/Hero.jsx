@@ -342,7 +342,7 @@ const Hero = () => {
             margin-top: -165px;
           }
         }
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 1275px) {
           ul {
             width: 95vw;
             transform-style: preserve-3d;
