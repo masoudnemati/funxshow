@@ -126,7 +126,7 @@ const Hero = () => {
           flex-wrap: wrap;
           justify-content: center;
           text-align: center;
-          height: 120vh;
+          height: 117vh;
         }
         .left {
           padding: 50px;
@@ -336,22 +336,17 @@ const Hero = () => {
 
         @media only screen and (max-width: 1275px) {
           ul {
-            width: 90vw;
-            height: 150px;
-            padding: 17px;
-            margin-top: -165px;
-          }
-        }
-        @media only screen and (max-width: 1275px) {
-          ul {
             width: 95vw;
             transform-style: preserve-3d;
             transform: rotate(0deg) skew(2deg);
-            margin-top: -190px;
+            padding: 17px;
+            height: 140px;
+            margin-top: -230px;
           }
 
           main {
             margin-left: 12vw;
+            height: 110vh;
           }
         }
 
