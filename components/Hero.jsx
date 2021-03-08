@@ -126,6 +126,7 @@ const Hero = () => {
           flex-wrap: wrap;
           justify-content: center;
           text-align: center;
+          height: 120vh;
         }
         .left {
           padding: 50px;

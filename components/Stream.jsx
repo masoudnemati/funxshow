@@ -4,39 +4,49 @@ const Stream = () => {
   return (
     <>
       <section>
-        <h2>Watch My Stream</h2>
+        <div className="streams-content">
+          <h2>Watch My Stream!</h2>
 
-        <div className="streams">
-          <a
-            href="https://www.aparat.com/funxshow/live"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="aparat">
-              <img
-                width="175"
-                src="/images/logo--color-white--without_text.svg"
-                alt="aparat"
-              />
-            </div>
-          </a>
-          <a
-            href="https://www.twitch.tv/funxshow"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="twitch">
-              <img width="200" src="/images/twitch_PNG31.png" alt="twitch" />
-            </div>
-          </a>
+          <div className="streams">
+            <a
+              href="https://www.aparat.com/funxshow/live"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="aparat">
+                <img
+                  width="175"
+                  src="/images/logo--color-white--without_text.svg"
+                  alt="aparat"
+                />
+              </div>
+            </a>
+            <a
+              href="https://www.twitch.tv/funxshow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="twitch">
+                <img width="200" src="/images/twitch_PNG31.png" alt="twitch" />
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
       <style jsx>{`
         section {
           text-align: center;
-          padding: 0 5vw 100px 5vw;
+          padding: 170px 5vw 150px 5vw;
           margin: 0;
+          margin-top: -160px;
+          background: url("/images/streams-left-bg.png") left center no-repeat,
+            url("/images/streams-right-bg.png") right center no-repeat;
+          background-size: 500px, 515px;
+        }
+
+        .streams-content {
+          margin-top: -60px;
         }
 
         h2 {
@@ -65,8 +75,10 @@ const Stream = () => {
 
         .aparat,
         .twitch {
+          width: 240px;
           margin: 20px;
           background-color: #292929;
+          transition: all 0.4s linear;
         }
 
         .aparat {
@@ -75,16 +87,24 @@ const Stream = () => {
           border-radius: 5px;
         }
 
-        .aparat:hover,
-        .twitch:hover {
-          background-color: black;
-        }
-
         .twitch {
           padding: 10px;
           padding-top: 20px;
           border: 1px solid #71299f;
           border-radius: 5px;
+        }
+
+        .aparat:hover,
+        .twitch:hover {
+          background-color: black;
+        }
+
+        .aparat:hover {
+          box-shadow: inset 0 0 15px #ed145b;
+        }
+
+        .twitch:hover {
+          box-shadow: inset 0 0 15px #71299f;
         }
       `}</style>
     </>
