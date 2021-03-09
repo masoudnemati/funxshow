@@ -181,6 +181,7 @@ const Footer = () => {
 
           .footer-left {
             padding-top: 50px;
+            padding-bottom: 25px;
           }
           /* img {
             margin: 0;
