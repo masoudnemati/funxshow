@@ -181,14 +181,6 @@ const Hero = () => {
           }
         }
 
-        @media only screen and (max-width: 1275px) {
-          .join {
-            margin-top: 0;
-            height: 50px;
-            background-image: none;
-          }
-        }
-
         /* copy from codepen */
 
         a {
@@ -333,7 +325,7 @@ const Hero = () => {
 
         /* responsive social media by myself */
 
-        @media only screen and (max-width: 1275px) {
+        @media only screen and (max-width: 1295px) {
           ul {
             width: 67vw;
             transform-style: flat;
@@ -341,6 +333,14 @@ const Hero = () => {
             padding: 0;
             height: 100px;
             margin-top: -230px;
+          }
+        }
+
+        @media only screen and (max-width: 1295px) {
+          .join {
+            margin-top: 0;
+            height: 50px;
+            background-image: none;
           }
         }
 
