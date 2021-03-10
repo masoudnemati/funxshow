@@ -36,13 +36,15 @@ const Stream = () => {
 
       <style jsx>{`
         section {
+          justify-content: center;
           text-align: center;
           padding: 170px 5vw 150px 5vw;
-          margin: 0;
+          margin: 0 auto;
           margin-top: -160px;
           background: url("/images/streams-left-bg.png") left center no-repeat,
             url("/images/streams-right-bg.png") right center no-repeat;
           background-size: 500px, 515px;
+          max-width: 1200px;
         }
 
         .streams-content {
