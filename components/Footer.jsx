@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="footer-center">
           <a
-            href="https://sibmo.ir/funxshow"
+            href="https://dono.gg/funxshow"
             target="_blank"
             rel="noopener noreferrer"
           >
